@@ -386,6 +386,10 @@ p {
     -webkit-text-fill-color: transparent;
     padding-bottom: 20px;
 }
+.primary-section-B .triangle {
+    border-top: 40px solid #FECE1A;
+}
+
 .secondary-section {
     background:#FFF/*#FECE1A*/;
 }
@@ -394,6 +398,19 @@ p {
 }
 .secondary-section h1, .secondary-section .title p {
     color: #181A1C;
+}
+/* banner section*/
+.banner-section {
+    background:#FECE1A;
+}
+.banner-section .title {
+    border-bottom: 1px solid #181A1C;
+}
+.banner-section h1, .secondary-section .title p {
+    color: #181A1C;
+}
+.banner-section .triangle {
+    border-top: 40px solid #FFF;
 }
 /* Third section use bacground image */
 .third-section {
