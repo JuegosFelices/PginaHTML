@@ -916,6 +916,9 @@ p {
     }
 }
 @media (max-width: 767px) {
+    .contactUs h1{
+        font-size: 40px;
+    }
     .info-mail {
         width:90%;
         padding:15px 0px;
