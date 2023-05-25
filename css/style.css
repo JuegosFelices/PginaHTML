@@ -852,7 +852,14 @@ p {
     transform: scale(1.2);
 }
 
-
+.iconsContactEventos{
+    width: 20px;
+    transition: .5s;
+    filter:invert(1);
+}
+.iconsContactEventos:hover{
+    transform: scale(1.2);
+}
 
 
 /*
