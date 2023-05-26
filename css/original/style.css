@@ -114,7 +114,7 @@ p {
 }
 .nav-pills > li > a:hover, .nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus {
     background: #181A1C;
-    color: #FECE1A;
+    color: #fff;
 }
 .navbar .btn-navbar:hover, .navbar .btn-navbar {
     border-radius:0;
@@ -250,12 +250,10 @@ p {
     overflow: hidden;
     position: relative;
     border:0;
-    border-radius:5;
+    border-radius:0;
     box-shadow:none;
-    text-align:justify;
-    color: #000;
-   background: #fff /*#191a1c*/;
-     
+    text-align:center;
+    background: #191a1c;
 }
 .thumbnail .more {
     display:block;
@@ -285,7 +283,7 @@ p {
 .thumbnail h3, 
 .thumbnail p {
     margin:0;
-    padding:15px;
+    padding:0;
     position:relative;
     z-index:4;
 }
@@ -296,12 +294,11 @@ p {
 }
 .thumbnail > p {
     padding-bottom:20px;
-   
 }
 .thumbnail .mask {
     opacity:0.85;
     filter: alpha(opacity=85);
-    top:100%;
+    top:-100%;
     left:0;
     width:100%;
     height:100%;
@@ -340,29 +337,6 @@ p {
     color: #FFF; 
 }
 .social li a:hover {
-    color:#FECE1A;
-}
-.contacte {
-    list-style: none;
-    float: none;
-    position:relative;
-    margin:5px; auto;
-}
-.contacte li {
-    display:inline-block;
-    line-height: 32px;
-    font-family:'Porta';
-    font-size: 32px;
-    padding:0 5px;
-}
-.contacte li a {
-    margin:0;
-    padding:0;
-    width:32px;
-    height:32px;
-    color: #181A1C; 
-}
-.contacte li a:hover {
     color:#FECE1A;
 }
 /*
@@ -412,6 +386,10 @@ p {
     -webkit-text-fill-color: transparent;
     padding-bottom: 20px;
 }
+.primary-section-B .triangle {
+    border-top: 40px solid #FECE1A;
+}
+
 .secondary-section {
     background:#FFF/*#FECE1A*/;
 }
@@ -421,6 +399,7 @@ p {
 .secondary-section h1, .secondary-section .title p {
     color: #181A1C;
 }
+/* banner section*/
 .banner-section {
     background:#FECE1A;
 }
@@ -432,12 +411,6 @@ p {
 }
 .banner-section .triangle {
     border-top: 40px solid #FFF;
-}
-.primary-section-B .triangle {
-    border-top: 40px solid #FECE1A;
-}
-.primary-sec-B .triangle{
-    border-top: 40px solid #FECE1A;
 }
 /* Third section use bacground image */
 .third-section {
@@ -519,7 +492,7 @@ p {
     display: inline-block;
 }
 .project-info div {
-    margin:10px;
+    margin-bottom:5px;
 }
 .close {
     float: right;
@@ -533,19 +506,10 @@ p {
 }
 
 .buttonsGalery{
-    position: relative;
     display: flex;
-    margin-top: 1em;
     justify-content: center;
+    margin-top: 4em;
     gap: 2em;
-}
-.iconsPortfolio{
-    width: 30px;
-    filter:invert(1)
-}
-
-.iconsPortfolio:hover{
-    filter:invert(0)
 }
 /*
 3.3 About
@@ -568,7 +532,6 @@ p {
 }
 .team .thumbnail .mask h2 {
     margin-top:20%;
-    padding: 10Px;
 }
 .team .thumbnail .mask, .team .thumbnail .mask h3, .team .thumbnail .mask p, .team .thumbnail:hover h3, .team .thumbnail:hover .social a:hover {
     color:#181A17;
@@ -580,6 +543,14 @@ p {
     padding: 10px;
     font-size: 16px;
     text-align: justify;
+}
+.iconsPortfolio{
+    width: 30px;
+    filter:invert(1)
+}
+
+.iconsPortfolio:hover{
+    filter:invert(0)
 }
 /*********************************************************************
                         SKILLS BAR
@@ -884,6 +855,7 @@ p {
 .iconsContactEventos{
     width: 20px;
     transition: .5s;
+    filter:invert(1);
 }
 .iconsContactEventos:hover{
     transform: scale(1.2);
@@ -1008,8 +980,5 @@ p {
     }
     .price-column, .testimonial {
         margin-top:30px;
-    }
-    .paragrap2{
-        display: none;
     }
 }
